@@ -185,5 +185,10 @@ vendor.usb.use_ffs_mtp=1
 sys.usb.mtp.batchcancel=1
 vendor.usb.use_gadget_hal=1
 
+# USB tethering
+vendor.usb.rmnet.func.name=rmnet_bam
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=rndis_bam
+
 # Zygote
 zygote.critical_window.minute=10
