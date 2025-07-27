@@ -522,9 +522,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.basic \
     android.hardware.usb.gadget-service.qti
 
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.usb.controller=a800000.dwc3
-
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
