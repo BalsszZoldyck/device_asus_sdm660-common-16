@@ -518,7 +518,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    usb_compositions.conf \
+    X00TD_usb_compositions.conf \
     android.hardware.usb@1.3-service.basic \
     android.hardware.usb.gadget-service.qti
 
