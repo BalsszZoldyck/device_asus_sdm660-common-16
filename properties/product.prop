@@ -30,11 +30,6 @@ ro.lmk.upgrade_pressure=100
 ro.lmk.downgrade_pressure=100
 ro.lmk.log_stats=true
 
-# enable debugging
-persist.sys.usb.config=mtp,adb
-ro.adb.secure=0
-ro.debuggable=1
-
 # Telephony
 # Disable handling audio direction changes on IMS calls.
 ro.telephony.handle_audio_direction_changes_between_call_state_changes=false
