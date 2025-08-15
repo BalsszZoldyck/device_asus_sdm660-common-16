@@ -25,6 +25,9 @@ COMMON_PATH := device/asus/sdm660-common
 PRODUCT_PACKAGES += \
     fs_config_files
 
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl:32 \
@@ -76,7 +79,6 @@ PRODUCT_COPY_FILES += \
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
 # Boot animation
@@ -519,10 +521,12 @@ PRODUCT_PACKAGES += \
     android.hardware.usb.gadget-service.qti
 
 # USB debugging
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp \
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
     ro.adb.secure=0 \
-    ro.debuggable=1
+    ro.debuggable=1 \
+    ro.secure=0
+
 
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
