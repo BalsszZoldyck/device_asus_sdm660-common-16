@@ -4,10 +4,13 @@
 
 # About Phone Definitions
 ro.product.marketname=Asus Zenfone Max Pro M1
-ro.infinity.soc=Qualcomm Snapdragon 636
-ro.infinity.battery=5000 mAh
-ro.infinity.display=1080 x 2160, 60 Hz
-ro.infinity.camera=13MP + 5MP + 8MP
+ro.lunaris.soc=Qualcomm Snapdragon 636
+ro.lunaris.battery=5000 mAh
+ro.lunaris.display=1080 x 2160, 60 Hz
+ro.lunaris.camera=13MP + 5MP + 8MP
+
+# Maintainer 
+ro.lunaris.maintainer=BllsszzXD 
 
 # Audio
 audio.sys.noisy.broadcast.delay=600
